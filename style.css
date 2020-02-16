@@ -1,18 +1,30 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: #c5c770;
-  font-family: 'Lato', sans-serif;
+  background: #649173;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #dbd5a4, #649173);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #dbd5a4, #649173);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-family: "Quicksand", sans-serif;
   min-height: 100vh;
   margin: 0;
 }
 
 h1 {
   text-align: center;
+  font-family: 'Lobster',
+  cursive;
+  font-size: 5rem;
+  
 }
 
 .container {
@@ -25,7 +37,13 @@ h1 {
   background-color: darksalmon;
   border: 0;
   border-radius: 4px;
-  color: #fff;
+  background: #649173;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #dbd5a4, #649173);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #dbd5a4, #649173);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   font-size: 16px;
   padding: 8px;
 }
@@ -40,18 +58,38 @@ select:focus {
 }
 
 .btn-toggle {
+  background: #3c3b3f;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #605c3c, #3c3b3f);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #605c3c, #3c3b3f);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   display: block;
   margin: auto;
   margin-bottom: 20px;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: white;
 }
 
 .text-box {
+  background: #159957;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #155799, #159957);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #155799, #159957);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   width: 70%;
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -800px);
-  background-color: #333;
+
   color: #fff;
   padding: 20px;
   border-radius: 5px;
@@ -62,10 +100,14 @@ select:focus {
   transform: translate(-50%, 0);
 }
 
+#text {
+  font-family: "Quicksand",
+  sans-serif;
+}
+
 .text-box select {
-  background-color: darksalmon;
   border: 0;
-  color: #fff;
+  color: darkblue
   font-size: 12px;
   height: 30px;
   width: 100%;
@@ -118,7 +160,13 @@ main {
 }
 
 .box .info {
-  background-color: darksalmon;
+  background: #3c3b3f;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #605c3c, #3c3b3f);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #605c3c, #3c3b3f);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   color: #fff;
   font-size: 18px;
   letter-spacing: 1px;
